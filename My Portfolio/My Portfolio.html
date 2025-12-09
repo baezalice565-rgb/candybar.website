@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alicia Baez - Web Design</title>
+  <meta name="description" content="Turning ideas into beauty while creating your web site" />
+  <meta name="keywords" content="Website, Web design, creativity," />
+  <meta name="author" content="Alicia Baez" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Corinthia:wght@400;700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="My Portfolio CSS.css"/>
+</head>
+
+<body>
+
+    <!-- Hero section -->
+  <section class="hero">
+    <img src="Hero-Section.jpg" alt="fondo con flor" class="hero-bg">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-initials">AB</span>
+        <span class="logo-name">Alicia Baez</span>
+      </div>
+      <ul>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+     <!-- Texto de hero -->
+    <div class="hero-text">
+      <h1 class="left"><span>Turning ideas</span></h1>
+      <h1 class="right"><span>into beauty</span></h1>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="About me Section.jpg" alt="Alicia painting a flower" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+        I like to express my creativity in different ways, and one of them is this website you are currently visiting. 
+        My name is <strong>Alicia Baez</strong>, and I enjoy bringing new ideas to life.
+        Besides painting, I have always been fascinated by how photos can quickly evoke strong emotions.
+        I want to highlight everyday motifs from new perspectives and make them available for as many people as possible to enjoy.
+        </p>
+      </div>
+
+  <section class="photo-section">
+    <h2 class="title">Photography</h2>
+    <p class="subtitle">Urban poetry. Everyday stillness. Natural light.</p>
+
+    <div class="gallery">
+      <div class="gallery-item large">
+        <img src="Flores Amarillas.jpg" alt="Flores Amarillas" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Lanxess Arena.jpg" alt="Foto Urbana 1" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Foto Urbana.jpg" alt="Foto Urbana 2" class="photo">
+      </div>
+
+      <div class="gallery-item wide">
+        <img src="Flores Violetas.jpg" alt="Flores Violetas" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Edificio Marrón.jpg" alt="Edificio" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Burgplatz.jpg" alt="Burgplatz" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Caracol.jpg" alt="Caracol" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Escaleras.jpg" alt="Escaleras" class="photo">
+      </div>
+
+      <div class="gallery-item small-vertical">
+        <img src="Niebla.jpg" alt="Niebla" class="photo">
+      </div>
+
+      <div class="gallery-item small-vertical">
+        <img src="Bosque Otoñal.jpg" alt="Bosque Otoñal" class="photo">
+      </div>
+
+      <div class="gallery-item small-vertical">
+        <img src="Torre de Caza.jpg" alt="Torre de Caza" class="photo">
+      </div>
+
+      <div class="gallery-item">
+        <img src="Gatito.jpg" alt="Gatito" class="photo">
+      </div>
+    </div>
+
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img">
+    </div>
+  </section>
+
+  </div>
+  </section>
+
+
+
+  <script>
+  window.addEventListener("scroll", function() {
+    const bg = document.querySelector(".hero-bg");
+    const flowers = document.querySelector(".flowers-svg");
+    let offset = window.scrollY * 0.3; // 🔹 0.3 controla la velocidad
+    bg.style.transform = `translateY(${offset}px)`;
+      // 🔹 Efecto sutil en las flores (se mueven más despacio)
+   if (flowers) {
+    flowers.style.transform = `translateY(${offset * 0.15}px)`;
+  }
+  });
+ </script>
+
+  <script>
+  // Parallax del hero (ya lo tenés)
+  window.addEventListener("scroll", function() {
+    const bg = document.querySelector(".hero-bg");
+    let offset = window.scrollY * 0.3;
+    bg.style.transform = `translateY(${offset}px)`;
+  });
+
+  // 👇 Nuevo: Fade-in para la sección About
+  const aboutSection = document.querySelector(".about-container");
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        aboutSection.classList.add("visible");
+        observer.unobserve(aboutSection); // se ejecuta solo una vez
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(aboutSection);
+  </script>
+
+  <script>
+  window.addEventListener("scroll", function() {
+    const aboutText = document.querySelector(".about-text");
+    const rect = aboutText.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
+      aboutText.classList.add("visible");
+    }
+  });
+  </script>
+
+  <script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox-img");
+  const closeBtn = document.querySelector(".close");
+
+  document.querySelectorAll(".photo").forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) lightbox.style.display = "none";
+  });
+  </script>
+
+
+
+
+</body>
+</html>
