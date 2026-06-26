@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="de">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Candy Bar.NRW - Holzakzente für Hochzeiten & Unternehmen</title>
+   <meta name="description" content="Candy Bar.NRW bietet handgefertigte Holzunikate für unvergessliche Anlässe - funktional, dekorativ und liebevoll verarbeitet." />
+   <meta name="keywords" content="Candy Bar, Hochzeit Idee, Holzdeko, NRW" />
+   <meta name="author" content="Candy Bar.NRW" />
+   <meta name="robots" content="index, follow">
+
+    <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+   <!-- Style -->
+   <link rel="stylesheet" href="Candy.Bar.css" />
+
+ </head>
+
+ <body>
+    <!-- NAVBAR -->
+   <nav class="navbar" role="navigation" aria-label="Hauptmenü">
+     <div class="navbar-container">
+        <div class="nav-top">
+
+           <!-- Logo + text -->
+         <a href="index.html" class="logo" aria-label="Startseite Candy Bar.NRW">
+           <img src="Logo.NRW.png" alt="Logo NRW Candy Bar NRW" class="logo-img" />
+           <span class="logo-text">Candy Bar.NRW</span>
+         </a>
+
+           <!-- Menu for bigger screens -->
+          <ul class="nav-links desktop-menu">
+            <li><a href="about-us.html" target="_blank" rel="noopener noreferrer">Über uns</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+
+           <!-- Menu for mobiles -->
+          <div class="menu-wrap">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-controls="mobile-menu"/>
+            <label for="menu-toggle" class="menu-icon" aria-label="Menü öffnen/schließen">
+             <span></span>
+             <span></span>
+             <span></span>
+            </label>
+
+            <ul class="nav-links mobile-menu" id="mobile-menu">
+              <li><a href="about-us.html" target="_blank" rel="noopener noreferrer">Über uns</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+       </div> <!-- nav-top -->
+      </div> <!-- navbar-container -->
+   </nav>
+
+    <section id="main-page" class="hero-section" role="region" aria-label="Hauptbereich - Startseite">
+      <div class="hero-slider">
+
+        <!-- Slide 1 -->
+       <article class="hero-slide active" aria-live="polite">
+         <img src="Main-image.png" alt="Natürliche Holzverarbeitung mit Liebe zum Detail für besondere Momente" loading=lazy class="hero-image" />
+          <div class="hero-text">
+            <h1>Natürliche Materialien, liebevoll verarbeitet - für unvergessliche Momente.</h1>
+            <a href="#contact" class="hero-button" aria-label="Zur Kontakt Sektion springen">Kontakt</a>
+          </div>
+       </article>
+
+         <!-- Slide 2 -->
+       <article class="hero-slide" aria-live="polite">
+         <img src="Main-image 2.png" alt="Vielseitige Candy Bar aus Holz für Hochzeiten, Events und Produktpräsentationen" loading=lazy class="hero-image image-2" />
+          <div class="hero-text">
+            <h2>Einzigartige Designs für besondere Anlässe.</h2>
+            <a href="#contact" class="hero-button">Kontakt</a>
+         </div>
+        </article>
+
+       <button class="arrow prev" aria-label="Vorheriger Slide">
+         <i data-lucide="arrow-big-left"></i>
+       </button>
+
+        <button class="arrow next" aria-label="Nächster Slide">
+          <i data-lucide="arrow-big-right"></i>
+        </button>
+
+        <!-- Dots -->
+        <div class="slider-dots" role="tablist" aria-label="Slides Navigation">
+          <button class="dot active" role="tab" aria-selected="true" aria-controls="slide1" id="dot1"></button>
+          <button class="dot" role="tab" aria-selected="false" aria-controls="slide2" id="dot2"></button>
+        </div>
+      </div>
+    </section>
+
+         <!-- Info-section -->
+
+    <section class="info-section-container" role="region" aria-label="Produktinformationen">
+      <h2 class="info-heading">Unikate aus Holz: funktional, dekorativ und voller Charme.</h2>
+
+      <!-- BLOQUE 1 -->
+      <div class="info-block first-block">
+        <div class="info-images">
+         <div class="image-slider">
+           <img src="Product-image 1.jpeg" alt="Handgefertigte Candy Bar aus Holz zur Präsentation von Waren in einem Geschäft" class="slide active" loading="lazy"/>
+           <img src="Product-image 2.jpeg" alt="Zufriedener Kunde präsentiert eine handgefertigte Candy Bar aus Holz im Verkaufsraum" class="slide" loading="lazy"/>
+         </div>
+         <div class="slider-dots">
+           <span class="dot active" aria-label="Slide 1"></span>
+           <span class="dot" aria-label="Slide 2"></span>
+         </div>
+       </div>
+
+       <div class="info-text">
+         <h2>Vielseitig nutzbar - für Events und Geschäfte</h2>
+         <p>Unsere handgefertigte Candy Bar aus Holz ist nicht nur für Hochzeiten gedacht.
+          Wie man auf dem Foto sieht, lässt sie sich auch wunderbar zur Präsentation von Waren einsetzen.</p>
+
+         <div class="info-list-container">
+           <ul>
+             <li>Funktioniert für private Feiern und geschäftliche Zwecke</li>
+             <li>Attraktive Präsentationsfläche für verschiedene Produkte</li>
+             <li>Stabiles, dekoratives Design</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+
+       <!-- BLOQUE 2 -->
+     <div class="info-block reverse second-block">
+       <div class="info-images">
+         <div class="image-slider">
+           <img src="Product-image 3.jpg" alt="Handgefertigte Candy Bar aus Holz als Dekoration für eine Hochzeit" class="slide active" loading="lazy"/>
+           <img src="Product-image 4.jpg" alt="Weiße Candy Bar aus Holz als dekoratives Element für Events und Feiern" class="slide" loading="lazy"/>
+         </div>
+         <div class="slider-dots">
+           <span class="dot active" aria-label="Slide 1"></span>
+           <span class="dot" aria-label="Slide 2"></span>
+         </div>
+       </div>
+
+       <div class="info-text">
+         <div class="info-list-container">
+           <ul>
+             <li>Erhältlich in verschiedenen Farben</li>
+             <li>Komplett personalisierbar je nach Verwendungszweck</li>
+             <li>Individuelles Design nach Kundenwunsch</li>
+            </ul>
+         </div>
+       </div>
+     </div>
+   </section>
+
+    <section id="contact" class="contact-section" role="region" aria-label="Kontaktinformationen und Formular">
+      <div class="contact-container">
+
+               <!-- Columna izquierda: Información de contacto -->
+       <div class="contact-info">
+          <h2>Noch Fragen?</h2>
+          <h3>Schreib uns über das Formular, per E-Mail oder ruf uns an</h3>
+
+          <div class="contact-details">
+            <p><strong><i data-lucide="phone"></i> Telefon:</strong> +49 123 456789</p>
+            <p><strong><i data-lucide="mail"></i> E-Mail:</strong> info@beispiel.de</p>
+          </div>
+       </div>
+
+            <!-- Columna derecha: Formulario -->
+        <div class="contact-form">
+          <h2>Kontakt</h2>
+          <form action="#" method="post" aria-label="Kontaktformular">
+            <label for="name" class="visually-hidden">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Name">
+
+            <label for="email" class="visually-hidden">E-Mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="E-Mail">
+
+            <label for="phone" class="visually-hidden">Handy Nummer</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Handy Nummer">
+
+            <label for="message" class="visually-hidden">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Nachricht"></textarea>
+
+            <button type="submit">SENDEN</button>
+          </form>
+        </div>
+
+      </div>
+   </section>
+
+    <footer class="footer"  role="contentinfo">
+      <div class="footer-content">
+         <span class="footer-logo">Candy Bar.NRW</span>
+         <nav class="footer-links" aria-label="Footer Navigation">
+           <a href="datenschutz.html">Datenschutzerklärung</a>
+           <a href="Impressum.html">Impressum</a>
+         </nav>
+      </div>
+    </footer>
+
+
+
+
+    <!-- Script del slider principal -->
+   <script>
+    const slides = document.querySelectorAll('.hero-slide');
+    const prevBtn = document.querySelector('.arrow.prev');
+    const nextBtn = document.querySelector('.arrow.next');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dots[i].classList.toggle('active', i === index);
+      });
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        currentIndex = index;
+        showSlide(currentIndex);
+      });
+    });
+
+    lucide.createIcons();
+   </script>
+
+
+     <!-- Script para animaciones al hacer scroll -->
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+
+      // Observar todas las listas y subtítulos
+      document.querySelectorAll('.info-list-container, .info-text h2, .info-text h3').forEach(el => {
+       observer.observe(el);
+        });
+     });
+   </script>
+
+   <script>
+    // Espera que el DOM esté listo
+   document.addEventListener('DOMContentLoaded', () => {
+    function initSlider(blockSelector, intervalTime = 4000) {
+      const block = document.querySelector(blockSelector);
+      if (!block) return;
+
+      const slides = block.querySelectorAll('.image-slider .slide');
+      const dots = block.querySelectorAll('.slider-dots .dot');
+      let currentIndex = 0;
+      let timer;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('active', i === index);
+          dots[i].classList.toggle('active', i === index);
+        });
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        let nextIndex = (currentIndex + 1) % slides.length;
+        showSlide(nextIndex);
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          showSlide(index);
+          resetTimer();
+        });
+      });
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(nextSlide, intervalTime);
+      }
+
+      timer = setInterval(nextSlide, intervalTime);
+      showSlide(currentIndex);
+    }
+
+    // Inicializar sliders con autoplay y control por dots
+    initSlider('.first-block', 4000);
+    initSlider('.second-block', 4000);
+   });
+   </script>
+   <script src="https://unpkg.com/lucide@latest"></script>
+
+
+
+  </body>
+</html>
