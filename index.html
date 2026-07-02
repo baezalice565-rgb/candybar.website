@@ -167,22 +167,67 @@
             <!-- Columna derecha: Formulario -->
         <div class="contact-form">
           <h2>Kontakt</h2>
-          <form action="#" method="post" aria-label="Kontaktformular">
-            <label for="name" class="visually-hidden">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required placeholder="Name">
 
-            <label for="email" class="visually-hidden">E-Mail</label>
-            <input type="email" id="email" name="email" autocomplete="email" required placeholder="E-Mail">
+        <form action="#" method="post" aria-label="Kontaktformular">
 
-            <label for="phone" class="visually-hidden">Handy Nummer</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Handy Nummer">
+         <label for="name" class="visually-hidden">Name</label>
+         <input
+         type="text"
+         id="name"
+         name="name"
+         autocomplete="name"
+         maxlength="100"
+         required
+         placeholder="Name">
 
-            <label for="message" class="visually-hidden">Nachricht</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Nachricht"></textarea>
+         <label for="email" class="visually-hidden">E-Mail</label>
+         <input
+         type="email"
+         id="email"
+         name="email"
+         autocomplete="email"
+         maxlength="254"
+         required
+         placeholder="E-Mail">
 
-            <button type="submit">SENDEN</button>
-          </form>
-        </div>
+         <label for="phone" class="visually-hidden">Telefonnummer</label>
+         <input
+         type="tel"
+         id="phone"
+         name="phone"
+         autocomplete="tel"
+         maxlength="30"
+         placeholder="Telefonnummer">
+
+         <label for="message" class="visually-hidden">Nachricht</label>
+         <textarea
+         id="message"
+         name="message"
+         rows="5"
+         maxlength="2000"
+         required
+         placeholder="Nachricht"></textarea>
+
+        <div class="privacy-checkbox">
+         <input
+         type="checkbox"
+         id="privacy"
+         name="privacy"
+         required>
+
+         <label for="privacy">
+          Ich habe die
+           <a href="/datenschutz.html" target="_blank" rel="noopener noreferrer">
+           Datenschutzerklärung
+          </a>
+           gelesen und stimme der Verarbeitung meiner Daten zu.
+      </label>
+    </div>
+
+    <button type="submit">SENDEN</button>
+
+  </form>
+</div>
 
       </div>
    </section>
