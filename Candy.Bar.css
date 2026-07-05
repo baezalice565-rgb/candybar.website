@@ -1065,11 +1065,11 @@ body {
 @media (max-width: 768px) {
 
     .hero-slider {
-        height: 60vh;
+        height: 45vh;
     }
 
     .hero-image {
-        height: 60vh;
+        height: 45vh;
         object-fit: cover;
         object-position: center;
     }
