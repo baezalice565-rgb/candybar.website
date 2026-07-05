@@ -973,3 +973,151 @@ html {
   font-family: "Karla", sans-serif;
   color: #333;
 }
+
+/* ===========================
+   THANK YOU PAGE
+=========================== */
+
+.thank-you-page {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+}
+
+.thank-you-container {
+    max-width: 650px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    background-color: #8B5E3C;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+}
+
+.thank-you-container h1 {
+    font-family: "KoHo", sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 600;
+    color: #3B2A21;
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-container p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.9rem 2.2rem;
+    background-color: #8B5E3C;
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #6f4a2f;
+    transform: translateY(-2px);
+}
+
+.back-button:focus-visible {
+    outline: 3px solid #3B2A21;
+    outline-offset: 4px;
+}
+
+/* ==========================================
+   FIX GLOBAL: EVITAR SCROLL HORIZONTAL
+========================================== */
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ==========================================
+   HERO FIX (MÓVIL)
+   Problema: height: 100vh en móvil = demasiado grande
+========================================== */
+
+@media (max-width: 768px) {
+
+    .hero-slider {
+        height: 60vh;
+    }
+
+    .hero-image {
+        height: 60vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-text {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+
+    .hero-text h1,
+    .hero-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-button {
+        font-size: 0.95rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* ==========================================
+   CONTACT FIX (MÓVIL)
+   Problema: gap 200px + flex horizontal => overflow
+========================================== */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 40px 15px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
