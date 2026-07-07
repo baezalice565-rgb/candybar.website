@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://candybar.com.de/sitemap.xml
