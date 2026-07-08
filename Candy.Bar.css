@@ -313,7 +313,7 @@ body {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   background-color: #EAC3CC;
-  color: #FFFDF9;
+  color: #5E3C2B;;
   font-size: 1rem;
   border-radius: 5px;
   transition: transform 0.3s ease;
@@ -696,7 +696,7 @@ body {
 
 .contact-form button {
   background-color: #EAC3CC;
-  color:#fff;
+  color:#5E3C2B;;
   border: none;
   padding: 0.75rem;
   font-family: "Karla", sans-serif;
